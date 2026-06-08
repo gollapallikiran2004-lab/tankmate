@@ -1,0 +1,48 @@
+# TankMate .gitignore
+
+# ── SECRETS — NEVER commit these ──────────────────────
+secrets.h
+*/secrets.h
+firmware/*/secrets.h
+
+# ── Firebase config (Flutter) ─────────────────────────
+lib/firebase_config.dart
+google-services.json
+GoogleService-Info.plist
+
+# ── Build outputs ──────────────────────────────────────
+build/
+*.elf
+*.bin
+*.hex
+*.map
+
+# ── Arduino IDE ────────────────────────────────────────
+*.bak
+
+# ── PlatformIO ─────────────────────────────────────────
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ── Flutter / Dart ─────────────────────────────────────
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+*.iml
+
+# ── macOS ──────────────────────────────────────────────
+.DS_Store
+__MACOSX/
+
+# ── Windows ────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+
+# ── IDE ────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.user
